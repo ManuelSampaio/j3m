@@ -319,12 +319,61 @@ h1, h2, h3, h4 {
 }
 
 /* ========================================
+   HERO BADGES
+   ======================================== */
+
+.hero-badges {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.badge {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 0.6rem 1.2rem;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    color: var(--white);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* ========================================
+   ABOUT HIGHLIGHTS
+   ======================================== */
+
+.about-highlights {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.highlight-item {
+    background: var(--light-gray);
+    padding: 1rem;
+    border-radius: 8px;
+    font-weight: 500;
+    color: var(--primary-blue);
+}
+
+/* ========================================
    SERVICES SECTION
    ======================================== */
 
 .services {
     padding: 6rem 5%;
     background: var(--light-gray);
+}
+
+/* ========================================
+   IT SERVICES SECTION
+   ======================================== */
+
+.it-services {
+    padding: 6rem 5%;
+    background: var(--white);
 }
 
 .services-grid {
