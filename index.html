@@ -3,52 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="J3M Solutions - Desenvolvimento Web e Soluções de TI profissionais em Angola. Websites, Sistemas, Suporte Técnico e Consultoria.">
-    <meta name="keywords" content="desenvolvimento web, TI angola, suporte técnico, websites, redes, segurança digital, consultoria TI">
-    <title>J3M Solutions - Desenvolvimento Web & Serviços de TI</title>
+    <title>J3M Solutions - Desenvolvimento Web & Soluções de TI</title>
+    <meta name="description" content="Desenvolvimento Web e Soluções de TI profissionais em Angola. Websites, Sistemas, Suporte Técnico e Infraestrutura completa para sua empresa." />
+    <meta name="author" content="J3M Solutions" />
+    <meta name="keywords" content="desenvolvimento web angola, TI angola, websites luanda, suporte técnico, infraestrutura de rede, segurança digital" />
     
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <meta property="og:title" content="J3M Solutions - Desenvolvimento Web & Soluções de TI" />
+    <meta property="og:description" content="Websites profissionais, sistemas personalizados e infraestrutura de TI completa em Angola" />
+    <meta property="og:type" content="website" />
     
-    <!-- CSS -->
+    <meta name="twitter:card" content="summary_large_image" />
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="js/script.js">
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" id="navbar">
         <div class="nav-container">
             <div class="logo">J<span>3</span>M</div>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <ul class="nav-links">
-                <li><a href="#home">Início</a></li>
                 <li><a href="#about">Sobre</a></li>
                 <li><a href="#services">Serviços</a></li>
-                <li><a href="#it-services">TI</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#pricing">Preços</a></li>
-                <li><a href="#contact">Contacto</a></li>
+                <li><a href="#contact" class="btn-nav">Contacto</a></li>
             </ul>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
+    <section class="hero">
         <div class="hero-container">
             <div class="hero-content">
-                <h1>Desenvolvimento Web <span class="highlight">&</span> Soluções de TI</h1>
-                <p>Transformamos negócios através da tecnologia. Websites profissionais, sistemas personalizados e suporte técnico completo para sua empresa crescer no digital.</p>
-                <div class="cta-buttons">
+                <div class="hero-badge">
+                    <div class="pulse-dot"></div>
+                    <span>Desenvolvimento Web & Soluções de TI</span>
+                </div>
+                
+                <h1>Tecnologia que impulsiona o seu negócio</h1>
+                
+                <p class="hero-description">
+                    Websites profissionais, sistemas personalizados e infraestrutura de TI completa para empresas que querem crescer.
+                </p>
+                
+                <div class="hero-buttons">
                     <a href="#contact" class="btn btn-primary">Solicitar Orçamento</a>
-                    <a href="#services" class="btn btn-secondary">Nossos Serviços</a>
+                    <a href="#services" class="btn btn-secondary">Ver Serviços</a>
                 </div>
-                <div class="hero-badges">
-                    <div class="badge">💻 Desenvolvimento Web</div>
-                    <div class="badge">🔧 Suporte Técnico</div>
-                    <div class="badge">🛡️ Segurança Digital</div>
-                </div>
-            </div>
-            <div class="hero-visual">
-                <div class="mockup-container">
-                    <div class="mockup">💻</div>
+                
+                <div class="hero-features">
+                    <div class="feature-item">
+                        <span class="feature-icon">💻</span>
+                        <span>Desenvolvimento Web</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">🖥️</span>
+                        <span>Infraestrutura de TI</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">🛡️</span>
+                        <span>Suporte Técnico</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -58,166 +78,108 @@
     <section id="about" class="about">
         <div class="section-container">
             <div class="section-header">
-                <div class="section-label">Quem Somos</div>
-                <h2>Jovens Talentosos, Soluções Completas</h2>
+                <span class="section-badge">Quem Somos</span>
+                <h2>Jovens talentos, soluções profissionais</h2>
+                <p>Quatro jovens angolanos apaixonados por tecnologia, com missão de elevar o nível digital das empresas em Angola.</p>
             </div>
-            <div class="about-content">
-                <div class="about-text">
-                    <p><strong>Somos quatro jovens angolanos apaixonados por tecnologia, com missão de elevar o nível digital das empresas em Angola.</strong></p>
-                    <p style="margin-top: 1.5rem;">Na J3M Solutions, não fazemos apenas websites bonitos. Oferecemos <strong>soluções tecnológicas completas</strong>: desde o desenvolvimento de plataformas web profissionais até suporte técnico especializado, configuração de redes, segurança digital e consultoria em TI.</p>
-                    <p style="margin-top: 1.5rem;">Combinamos expertise em programação com conhecimento técnico em infraestrutura para entregar projetos que realmente funcionam e fazem a diferença no seu negócio.</p>
-                    <div class="about-highlights">
-                        <div class="highlight-item"> Desenvolvimento Web Profissional</div>
-                        <div class="highlight-item"> Suporte Técnico Especializado</div>
-                        <div class="highlight-item"> Consultoria em TI</div>
-                        <div class="highlight-item"> Segurança e Redes</div>
-                    </div>
+            
+            <div class="founders-grid">
+                <div class="founder-card">
+                    <div class="founder-avatar">MS</div>
+                    <h4>Manuel Sampaio</h4>
+                    <p>Consultor TI</p>
                 </div>
-                <div class="founders-grid">
-                    <div class="founder-card">
-                        <div class="founder-avatar">MS</div>
-                        <h4>Manuel Sampaio</h4>
-                        <p>Co-Fundador & Consultor TI</p>
-                    </div>
-                    <div class="founder-card">
-                        <div class="founder-avatar">JC</div>
-                        <h4>José Correia</h4>
-                        <p>Co-Fundador & Especialista TI</p>
-                    </div>
-                    <div class="founder-card">
-                        <div class="founder-avatar">JU</div>
-                        <h4>José Ulo</h4>
-                        <p>Co-Fundador & Desenvolvedor</p>
-                    </div>
-                    <div class="founder-card">
-                        <div class="founder-avatar">JF</div>
-                        <h4>Jair Fernandes</h4>
-                        <p>Co-Fundador & Full Stack Dev</p>
-                    </div>
+                <div class="founder-card">
+                    <div class="founder-avatar">JC</div>
+                    <h4>José Correia</h4>
+                    <p>Especialista TI</p>
+                </div>
+                <div class="founder-card">
+                    <div class="founder-avatar">JU</div>
+                    <h4>José Ulo</h4>
+                    <p>Desenvolvedor</p>
+                </div>
+                <div class="founder-card">
+                    <div class="founder-avatar">JF</div>
+                    <h4>Jair Fernandes</h4>
+                    <p>Full Stack Dev</p>
+                </div>
+            </div>
+            
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="80">0</div>
+                    <div class="stat-label">Projetos Entregues</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="60">0</div>
+                    <div class="stat-label">Clientes Satisfeitos</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Suporte Disponível</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Section - Desenvolvimento Web -->
+    <!-- Services Section -->
     <section id="services" class="services">
         <div class="section-container">
             <div class="section-header">
-                <div class="section-label">Desenvolvimento Web</div>
-                <h2>Criamos Presenças Digitais de Impacto</h2>
-                <p>Websites, sistemas e aplicações web profissionais que geram resultados</p>
+                <span class="section-badge">Serviços</span>
+                <h2>Soluções completas em tecnologia</h2>
+                <p>Do desenvolvimento web à infraestrutura de TI</p>
             </div>
+            
             <div class="services-grid">
                 <div class="service-card">
-                    <div class="service-icon">🎯</div>
-                    <h3>Landing Pages</h3>
-                    <p>Páginas de conversão otimizadas que transformam visitantes em clientes. Design moderno, carregamento ultra-rápido e foco total em resultados mensuráveis.</p>
+                    <span class="service-icon">🌐</span>
+                    <h3>Websites Profissionais</h3>
+                    <p>Sites corporativos e landing pages que convertem visitantes em clientes.</p>
                 </div>
+                
                 <div class="service-card">
-                    <div class="service-icon">🏢</div>
-                    <h3>Websites Corporativos</h3>
-                    <p>Sites institucionais completos que transmitem credibilidade. Design responsivo, SEO otimizado e gestão de conteúdo facilitada.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">🛍️</div>
+                    <span class="service-icon">🛒</span>
                     <h3>E-commerce</h3>
-                    <p>Lojas online profissionais com catálogo de produtos, carrinho de compras, pagamento integrado e painel administrativo completo.</p>
+                    <p>Lojas online completas com sistema de pagamento e gestão de produtos.</p>
                 </div>
+                
                 <div class="service-card">
-                    <div class="service-icon">📊</div>
+                    <span class="service-icon">💾</span>
                     <h3>Sistemas Personalizados</h3>
-                    <p>Aplicações web sob medida para automatizar processos da sua empresa. Dashboards, CRMs, ERPs e sistemas de gestão customizados.</p>
+                    <p>Aplicações web sob medida para automatizar processos da sua empresa.</p>
                 </div>
+                
                 <div class="service-card">
-                    <div class="service-icon">📱</div>
-                    <h3>Progressive Web Apps</h3>
-                    <p>Aplicações web que funcionam como apps nativos. Trabalham offline, recebem notificações e podem ser instaladas no dispositivo.</p>
+                    <span class="service-icon">🌐</span>
+                    <h3>Infraestrutura de Redes</h3>
+                    <p>Instalação e configuração de redes locais e Wi-Fi corporativo.</p>
                 </div>
+                
                 <div class="service-card">
-                    <div class="service-icon">🎨</div>
-                    <h3>UI/UX Design</h3>
-                    <p>Design de interfaces modernas e intuitivas. Protótipos interativos, identidade visual e experiência do usuário otimizada.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- IT Services Section -->
-    <section id="it-services" class="it-services">
-        <div class="section-container">
-            <div class="section-header">
-                <div class="section-label">Serviços de TI</div>
-                <h2>Suporte Técnico e Infraestrutura Completa</h2>
-                <p>Soluções tecnológicas para manter sua empresa funcionando perfeitamente</p>
-            </div>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">🔧</div>
-                    <h3>Suporte Técnico</h3>
-                    <p>Manutenção preventiva e corretiva de computadores, notebooks e periféricos. Atendimento remoto e presencial com tempo de resposta rápido.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">🌐</div>
-                    <h3>Configuração de Redes</h3>
-                    <p>Instalação e configuração de redes locais (LAN), Wi-Fi corporativo, servidores e infraestrutura de rede completa para empresas.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">🛡️</div>
+                    <span class="service-icon">🛡️</span>
                     <h3>Segurança Digital</h3>
-                    <p>Proteção de dados, firewall, antivírus empresarial, backup automático e políticas de segurança para proteger sua empresa contra ameaças.</p>
+                    <p>Proteção de dados, firewall, backup automático e políticas de segurança.</p>
                 </div>
+                
                 <div class="service-card">
-                    <div class="service-icon">☁️</div>
+                    <span class="service-icon">☁️</span>
                     <h3>Cloud Computing</h3>
-                    <p>Migração para nuvem, configuração de servidores cloud, backups na nuvem e gestão de infraestrutura em AWS, Azure ou Google Cloud.</p>
+                    <p>Migração para nuvem e gestão de infraestrutura em AWS, Azure ou Google Cloud.</p>
                 </div>
+                
                 <div class="service-card">
-                    <div class="service-icon">💾</div>
-                    <h3>Gestão de Dados</h3>
-                    <p>Backup e recuperação de dados, migração de sistemas, otimização de bancos de dados e políticas de retenção de informação.</p>
+                    <span class="service-icon">🔧</span>
+                    <h3>Suporte Técnico</h3>
+                    <p>Manutenção de computadores e periféricos com atendimento rápido.</p>
                 </div>
+                
                 <div class="service-card">
-                    <div class="service-icon">📞</div>
+                    <span class="service-icon">💼</span>
                     <h3>Consultoria em TI</h3>
-                    <p>Análise de infraestrutura atual, planejamento de crescimento tecnológico, auditoria de sistemas e consultoria estratégica em tecnologia.</p>
+                    <p>Análise de infraestrutura e planejamento estratégico em tecnologia.</p>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">🖥️</div>
-                    <h3>Montagem de Computadores</h3>
-                    <p>Montagem e configuração de PCs personalizados para escritório ou uso específico. Upgrade de hardware e otimização de desempenho.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">🔌</div>
-                    <h3>Instalação de Software</h3>
-                    <p>Instalação e configuração de sistemas operacionais, softwares empresariais, licenciamento e treinamento de equipes.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">📡</div>
-                    <h3>Manutenção Preventiva</h3>
-                    <p>Contratos de manutenção mensal, limpeza de equipamentos, atualização de sistemas e monitoramento proativo de infraestrutura.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Stats Section -->
-    <section class="stats">
-        <div class="stats-grid">
-            <div class="stat-item">
-                <div class="stat-number">80+</div>
-                <div class="stat-label">Projetos Entregues</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number">60+</div>
-                <div class="stat-label">Clientes Satisfeitos</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number">8000+</div>
-                <div class="stat-label">Horas de Trabalho</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number">24/7</div>
-                <div class="stat-label">Suporte Disponível</div>
             </div>
         </div>
     </section>
@@ -226,52 +188,46 @@
     <section id="portfolio" class="portfolio">
         <div class="section-container">
             <div class="section-header">
-                <div class="section-label">Portfolio</div>
-                <h2>Projetos que Fazemos com Excelência</h2>
-                <p>Desenvolvimento web e projetos de TI implementados com sucesso</p>
+                <span class="section-badge">Portfolio</span>
+                <h2>Projetos implementados</h2>
+                <p>Exemplos do nosso trabalho</p>
             </div>
+            
             <div class="portfolio-grid">
-                <div class="portfolio-item">
-                    <div class="portfolio-image">🏢</div>
-                    <div class="portfolio-info">
-                        <h3>Website Corporativo Premium</h3>
-                        <p>Website institucional completo com CMS, design responsivo e integração com redes sociais para empresa de consultoria.</p>
-                    </div>
+                <div class="portfolio-card">
+                    <div class="portfolio-icon">🏢</div>
+                    <h3>Website Corporativo Premium</h3>
+                    <p>Website institucional completo com CMS e design responsivo.</p>
                 </div>
-                <div class="portfolio-item">
-                    <div class="portfolio-image">🌐</div>
-                    <div class="portfolio-info">
-                        <h3>Infraestrutura de Rede - Escritório</h3>
-                        <p>Configuração completa de rede local, Wi-Fi corporativo e servidor de arquivos para empresa com 30 colaboradores.</p>
-                    </div>
+                
+                <div class="portfolio-card">
+                    <div class="portfolio-icon">🌐</div>
+                    <h3>Infraestrutura de Rede</h3>
+                    <p>Configuração completa de rede para empresa com 30 colaboradores.</p>
                 </div>
-                <div class="portfolio-item">
-                    <div class="portfolio-image">🛍️</div>
-                    <div class="portfolio-info">
-                        <h3>E-commerce Completo</h3>
-                        <p>Loja online com 500+ produtos, sistema de pagamento integrado, gestão de stock e painel administrativo.</p>
-                    </div>
+                
+                <div class="portfolio-card">
+                    <div class="portfolio-icon">🛒</div>
+                    <h3>E-commerce Completo</h3>
+                    <p>Loja online com 500+ produtos e sistema de pagamento integrado.</p>
                 </div>
-                <div class="portfolio-item">
-                    <div class="portfolio-image">🛡️</div>
-                    <div class="portfolio-info">
-                        <h3>Segurança Digital Empresarial</h3>
-                        <p>Implementação de firewall, antivírus corporativo, backup automático e políticas de segurança para empresa financeira.</p>
-                    </div>
+                
+                <div class="portfolio-card">
+                    <div class="portfolio-icon">🛡️</div>
+                    <h3>Segurança Digital</h3>
+                    <p>Implementação de firewall e backup automático para empresa financeira.</p>
                 </div>
-                <div class="portfolio-item">
-                    <div class="portfolio-image">📊</div>
-                    <div class="portfolio-info">
-                        <h3>Sistema de Gestão Personalizado</h3>
-                        <p>CRM customizado para gestão de clientes, vendas e relatórios automatizados com dashboard interativo.</p>
-                    </div>
+                
+                <div class="portfolio-card">
+                    <div class="portfolio-icon">📊</div>
+                    <h3>Sistema de Gestão</h3>
+                    <p>CRM customizado com dashboard interativo e relatórios automatizados.</p>
                 </div>
-                <div class="portfolio-item">
-                    <div class="portfolio-image">☁️</div>
-                    <div class="portfolio-info">
-                        <h3>Migração para Cloud</h3>
-                        <p>Migração completa de infraestrutura on-premise para AWS com redução de 40% nos custos operacionais.</p>
-                    </div>
+                
+                <div class="portfolio-card">
+                    <div class="portfolio-icon">☁️</div>
+                    <h3>Migração para Cloud</h3>
+                    <p>Migração completa para AWS com redução de 40% nos custos.</p>
                 </div>
             </div>
         </div>
@@ -281,147 +237,135 @@
     <section id="pricing" class="pricing">
         <div class="section-container">
             <div class="section-header">
-                <div class="section-label">Planos</div>
-                <h2>Pacotes para Cada Necessidade</h2>
-                <p>Escolha o plano ideal ou solicite orçamento personalizado</p>
+                <span class="section-badge">Planos</span>
+                <h2>Escolha o plano ideal</h2>
+                <p>Pacotes flexíveis para cada necessidade</p>
             </div>
+            
             <div class="pricing-grid">
                 <div class="pricing-card">
-                    <div class="pricing-header">
-                        <h3>Presença Digital</h3>
-                        <div class="pricing-price">Sob Consulta</div>
-                    </div>
+                    <h3>Presença Digital</h3>
+                    <p class="pricing-subtitle">Ideal para começar</p>
+                    <div class="pricing-price">Sob Consulta</div>
                     <ul class="pricing-features">
-                        <li>Landing Page ou Site Simples</li>
-                        <li>Design Responsivo</li>
-                        <li>Até 5 Páginas</li>
-                        <li>Formulário de Contacto</li>
-                        <li>SEO Básico</li>
-                        <li>Hospedagem Grátis (1 ano)</li>
-                        <li>1 Mês de Suporte</li>
+                        <li>✓ Landing Page ou Site Simples</li>
+                        <li>✓ Design Responsivo</li>
+                        <li>✓ Até 5 Páginas</li>
+                        <li>✓ Formulário de Contacto</li>
+                        <li>✓ SEO Básico</li>
+                        <li>✓ Hospedagem Grátis (1 ano)</li>
                     </ul>
-                    <a href="#contact" class="btn btn-primary" style="width: 100%; text-align: center; display: block;">Solicitar Orçamento</a>
+                    <a href="#contact" class="btn btn-outline">Solicitar Orçamento</a>
                 </div>
                 
                 <div class="pricing-card featured">
-                    <div class="pricing-badge">Mais Vendido</div>
-                    <div class="pricing-header">
-                        <h3>Empresarial Completo</h3>
-                        <div class="pricing-price">Sob Consulta</div>
-                    </div>
+                    <div class="pricing-badge">Mais Popular</div>
+                    <h3>Empresarial</h3>
+                    <p class="pricing-subtitle">Solução completa</p>
+                    <div class="pricing-price">Sob Consulta</div>
                     <ul class="pricing-features">
-                        <li>Website Profissional Completo</li>
-                        <li>Até 15 Páginas + Blog</li>
-                        <li>Sistema de Gestão de Conteúdo</li>
-                        <li>Configuração de Email Profissional</li>
-                        <li>SEO Avançado</li>
-                        <li>Suporte Técnico Básico (3 meses)</li>
-                        <li>Manutenção de 1 PC</li>
-                        <li>Backup Semanal</li>
+                        <li>✓ Website Profissional Completo</li>
+                        <li>✓ Até 15 Páginas + Blog</li>
+                        <li>✓ Sistema de Gestão de Conteúdo</li>
+                        <li>✓ Email Profissional</li>
+                        <li>✓ SEO Avançado</li>
+                        <li>✓ Suporte Técnico (3 meses)</li>
+                        <li>✓ Backup Semanal</li>
                     </ul>
-                    <a href="#contact" class="btn btn-primary" style="width: 100%; text-align: center; display: block;">Solicitar Orçamento</a>
+                    <a href="#contact" class="btn btn-primary">Solicitar Orçamento</a>
                 </div>
                 
                 <div class="pricing-card">
-                    <div class="pricing-header">
-                        <h3>Soluções TI Premium</h3>
-                        <div class="pricing-price">Sob Consulta</div>
-                    </div>
+                    <h3>Premium TI</h3>
+                    <p class="pricing-subtitle">Máxima performance</p>
+                    <div class="pricing-price">Sob Consulta</div>
                     <ul class="pricing-features">
-                        <li>Todos os serviços do plano anterior</li>
-                        <li>Sistema Web Personalizado</li>
-                        <li>Infraestrutura de Rede Completa</li>
-                        <li>Segurança Digital Avançada</li>
-                        <li>Backup Automático em Nuvem</li>
-                        <li>Suporte Técnico Prioritário 24/7</li>
-                        <li>Manutenção até 5 PCs</li>
-                        <li>Consultoria Mensal</li>
-                        <li>SLA Garantido</li>
+                        <li>✓ Tudo do plano anterior</li>
+                        <li>✓ Sistema Web Personalizado</li>
+                        <li>✓ Infraestrutura de Rede</li>
+                        <li>✓ Segurança Digital Avançada</li>
+                        <li>✓ Backup em Nuvem</li>
+                        <li>✓ Suporte 24/7</li>
+                        <li>✓ Manutenção até 5 PCs</li>
                     </ul>
-                    <a href="#contact" class="btn btn-primary" style="width: 100%; text-align: center; display: block;">Solicitar Orçamento</a>
+                    <a href="#contact" class="btn btn-outline">Solicitar Orçamento</a>
                 </div>
             </div>
             
             <div class="pricing-note">
-                <p><strong>💡 Precisa de algo específico?</strong> Criamos pacotes personalizados para suas necessidades. Entre em contacto para um orçamento sob medida.</p>
+                <p><strong>Precisa de algo específico?</strong> Criamos pacotes personalizados para suas necessidades.</p>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
-        <div class="contact-container">
+        <div class="section-container">
             <div class="section-header">
-                <div class="section-label">Fale Connosco</div>
-                <h2>Pronto para Transformar o Seu Negócio?</h2>
-                <p>Entre em contacto e descubra como podemos ajudar sua empresa a crescer com tecnologia</p>
+                <span class="section-badge">Contacto</span>
+                <h2>Vamos conversar</h2>
+                <p>Entre em contacto e descubra como podemos ajudar sua empresa</p>
             </div>
             
             <div class="contact-methods">
-                <div class="contact-method">
+                <a href="https://wa.me/244923456789" target="_blank" class="contact-card">
                     <div class="contact-icon">📱</div>
                     <h4>WhatsApp</h4>
-                    <p><a href="https://wa.me/244923456789">+244 923 456 789</a></p>
-                    <small>Atendimento rápido</small>
-                </div>
-                <div class="contact-method">
+                    <p>+244 923 456 789</p>
+                </a>
+                
+                <a href="mailto:contato@j3msolutions.com" class="contact-card">
                     <div class="contact-icon">📧</div>
                     <h4>Email</h4>
-                    <p><a href="mailto:contato@j3msolutions.com">contato@j3msolutions.com</a></p>
-                    <small>Resposta em 24h</small>
-                </div>
-                <div class="contact-method">
+                    <p>contato@j3msolutions.com</p>
+                </a>
+                
+                <div class="contact-card">
                     <div class="contact-icon">📍</div>
                     <h4>Localização</h4>
                     <p>Luanda, Angola</p>
-                    <small>Atendimento presencial</small>
                 </div>
             </div>
-
-            <div class="contact-form">
-                <h3 style="text-align: center; margin-bottom: 1rem; color: var(--primary-blue);">Ou solicite um orçamento</h3>
-                <p style="text-align: center; margin-bottom: 2rem; color: #666;">Preencha o formulário e entraremos em contacto em breve</p>
+            
+            <div class="contact-form-container">
+                <h3>Solicite um orçamento</h3>
                 <form id="contactForm">
                     <div class="form-row">
                         <div class="form-group">
-                            <label>Nome Completo *</label>
+                            <label>Nome *</label>
                             <input type="text" name="name" required placeholder="Seu nome">
                         </div>
-                        <div class="form-group">
-                            <label>Empresa</label>
-                            <input type="text" name="company" placeholder="Nome da empresa">
-                        </div>
-                    </div>
-                    <div class="form-row">
                         <div class="form-group">
                             <label>Email *</label>
                             <input type="email" name="email" required placeholder="seu@email.com">
                         </div>
+                    </div>
+                    
+                    <div class="form-row">
                         <div class="form-group">
                             <label>Telefone *</label>
                             <input type="tel" name="phone" required placeholder="+244 923 456 789">
                         </div>
+                        <div class="form-group">
+                            <label>Serviço</label>
+                            <select name="service">
+                                <option value="">Selecione</option>
+                                <option value="website">Website</option>
+                                <option value="ecommerce">E-commerce</option>
+                                <option value="sistema">Sistema Personalizado</option>
+                                <option value="suporte">Suporte Técnico</option>
+                                <option value="rede">Infraestrutura de Rede</option>
+                                <option value="consultoria">Consultoria TI</option>
+                            </select>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label>Serviço de Interesse</label>
-                        <select name="service">
-                            <option value="">Selecione um serviço</option>
-                            <option value="website">Website/Landing Page</option>
-                            <option value="ecommerce">E-commerce</option>
-                            <option value="sistema">Sistema Personalizado</option>
-                            <option value="suporte">Suporte Técnico</option>
-                            <option value="rede">Configuração de Rede</option>
-                            <option value="seguranca">Segurança Digital</option>
-                            <option value="cloud">Cloud Computing</option>
-                            <option value="consultoria">Consultoria em TI</option>
-                            <option value="outro">Outro</option>
-                        </select>
-                    </div>
+                    
                     <div class="form-group">
                         <label>Mensagem *</label>
-                        <textarea name="message" required placeholder="Conte-nos sobre seu projeto ou necessidade..."></textarea>
+                        <textarea name="message" required placeholder="Conte-nos sobre seu projeto..." rows="5"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary" style="width: 100%;">Enviar Solicitação</button>
+                    
+                    <button type="submit" class="btn btn-primary btn-full">Enviar Solicitação</button>
                 </form>
             </div>
         </div>
@@ -429,36 +373,29 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-logo">J<span style="color: #1F6FEB;">3</span>M Solutions</div>
-            <p class="footer-tagline">Desenvolvimento Web & Soluções de TI para o futuro da sua empresa</p>
-            
-            <div class="footer-services">
-                <div class="footer-column">
-                    <h4>Desenvolvimento Web</h4>
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">J<span>3</span>M</div>
+                    <p>Desenvolvimento Web & Soluções de TI para empresas em Angola</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Serviços</h4>
                     <ul>
                         <li>Websites Corporativos</li>
                         <li>E-commerce</li>
-                        <li>Sistemas Personalizados</li>
-                        <li>Landing Pages</li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h4>Serviços de TI</h4>
-                    <ul>
                         <li>Suporte Técnico</li>
-                        <li>Configuração de Redes</li>
-                        <li>Segurança Digital</li>
-                        <li>Cloud Computing</li>
+                        <li>Infraestrutura de TI</li>
                     </ul>
                 </div>
-                <div class="footer-column">
-                    <h4>Links Rápidos</h4>
+                
+                <div class="footer-col">
+                    <h4>Contacto</h4>
                     <ul>
-                        <li><a href="#about">Sobre Nós</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#pricing">Preços</a></li>
-                        <li><a href="#contact">Contacto</a></li>
+                        <li><a href="https://wa.me/244923456789">+244 923 456 789</a></li>
+                        <li><a href="mailto:contato@j3msolutions.com">contato@j3msolutions.com</a></li>
+                        <li>Luanda, Angola</li>
                     </ul>
                 </div>
             </div>
@@ -469,7 +406,10 @@
         </div>
     </footer>
 
-    <!-- JavaScript -->
-    <script src="js/script.js"></script>
+    <button class="back-to-top" id="backToTop">↑</button>
+
+    <script>
+       
+    </script>
 </body>
 </html>
