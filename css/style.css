@@ -9,6 +9,7 @@
 
 :root {
     --primary-blue: #0B0F3B;
+    --second-blue: #022c5c;
     --accent-blue: #1F6FEB;
     --light-gray: #F8F9FA;
     --white: #FFFFFF;
@@ -42,7 +43,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background: transparent;
+    background: var(--primary-blue);
     padding: 1rem 5%;
     z-index: 1000;
     transition: var(--transition);
@@ -148,11 +149,41 @@ body {
     background: var(--primary-blue);
 }
 
+/* ===== Mobile Styles ===== */
+@media (max-width: 768px) {
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background: var(--primary-blue);
+        width: 100%;
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 2rem 0;
+        display: none; /* importante */
+    }
+
+    .nav-links.active {
+        display: flex; /* aparece quando clicado */
+    }
+
+    .nav-links a {
+        font-size: 1.2rem;
+        color: var(--white);
+    }
+}
+
+
 /* ========================================
    HERO SECTION
    ======================================== */
 .hero {
-    background: linear-gradient(135deg, var(--primary-blue) 0%, #1a1f5c 100%);
+    background: var(--second-blue);
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -168,7 +199,7 @@ body {
     right: -10%;
     width: 60%;
     height: 150%;
-    background: radial-gradient(circle, rgba(31, 111, 235, 0.2) 0%, transparent 70%);
+  
     animation: float 20s ease-in-out infinite;
 }
 
